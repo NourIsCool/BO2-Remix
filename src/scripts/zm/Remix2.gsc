@@ -31,7 +31,6 @@
 #include scripts/zm/remix/_sharedbox;
 #include scripts/zm/remix/_reset;
 #include scripts/zm/remix/_utility;
-#include scripts/zm/remix/_zombies;
 #include scripts/zm/remix/_debug;
 #include scripts/zm/remix/_dogs;
 
@@ -60,7 +59,6 @@ main()
 	replaceFunc( maps/mp/zombies/_zm_weapons::ammo_give, ::ammo_give_override );
 	replaceFunc( maps/mp/zombies/_zm::actor_damage_override, ::actor_damage_override_override );
 	replaceFunc( maps/mp/zombies/_zm::take_additionalprimaryweapon, ::take_additionalprimaryweapon_overrride );
-	replaceFunc( maps/mp/zombies/_zm_spawner::zombie_rise_death, ::zombie_rise_death_override );
 	replaceFunc( maps/mp/zombies/_zm::round_think, ::round_think_override );
 	replaceFunc( maps/mp/zombies/_zm::ai_calculate_health, ::ai_calculate_health_override );
 	replaceFunc( maps/mp/zombies/_zm_pers_upgrades_functions::pers_nube_should_we_give_raygun, ::pers_nube_should_we_give_raygun_override );
